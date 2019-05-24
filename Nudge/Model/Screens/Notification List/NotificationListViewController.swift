@@ -40,6 +40,8 @@ class NotificationListViewController: UITableViewController {
         cell.textLabel?.text = request.content.body
         
         if let trigger = request.trigger as? UNTimeIntervalNotificationTrigger {
+            // BUG: nextTriggerDate seems to be calculated incorrectly. The notification fires are the
+            //      correct time, but the retrieved value is incorrect.
             cell.detailTextLabel?.text = "\(trigger.timeInterval) \(trigger.nextTriggerDate()!.description)"
         } else {
             cell.detailTextLabel?.text = nil
