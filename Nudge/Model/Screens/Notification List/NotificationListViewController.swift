@@ -42,7 +42,7 @@ class NotificationListViewController: UITableViewController {
         if let trigger = request.trigger as? UNTimeIntervalNotificationTrigger {
             // BUG: nextTriggerDate seems to be calculated incorrectly. The notification fires are the
             //      correct time, but the retrieved value is incorrect.
-            cell.detailTextLabel?.text = "\(trigger.timeInterval) \(trigger.nextTriggerDate()!.description)"
+            cell.detailTextLabel?.text = "\(trigger.timeInterval.humanReadable) \(trigger.nextTriggerDate()!.description)"
         } else {
             cell.detailTextLabel?.text = nil
         }
@@ -50,4 +50,20 @@ class NotificationListViewController: UITableViewController {
         return cell
     }
     
+}
+
+extension TimeInterval {
+    var humanReadable: String {
+        let seconds: Int = Int(self) % 60
+        let minutes: Int = ((Int(self) - seconds) % (60 * 60)) / 60
+        let hours: Int = (Int(self) - minutes * 60 - seconds) / (60  * 60)
+        
+        return [
+            (hours, "hour"),
+            (minutes, "minute"),
+            (seconds, "second")
+        ].filter { $0.0 > 0 }
+         .map { "\($0) \($1)\($0 == 1 ? "" : "s")" }
+         .joined(separator: ", ")
+    }
 }
