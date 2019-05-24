@@ -31,11 +31,8 @@ class NotificationScheduler: NSObject, MessageStorageDelegate, UNUserNotificatio
         content.body = body
         content.sound = UNNotificationSound.default
         
-        // Trigger
-        let calendarComponents = NSCalendar.current.dateComponents(
-            [.day, .month, .year, .hour, .minute], from: date
-        )
-        let trigger = UNCalendarNotificationTrigger(dateMatching: calendarComponents, repeats: false)
+        // Trigger        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: date.timeIntervalSinceNow, repeats: false)
         
         // Request
         let request = UNNotificationRequest(identifier:UUID().uuidString, content: content, trigger: trigger)
