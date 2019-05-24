@@ -159,9 +159,9 @@
 		FC889DFB2296D47E003EB389 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				FC889E0322977550003EB389 /* Notification List */,
 				FC889DFA2296D477003EB389 /* Debug */,
 				FC889DF92296D466003EB389 /* Message List */,
+				FC889E0322977550003EB389 /* Notification List */,
 				FC889DFC2296D484003EB389 /* Settings */,
 			);
 			path = Screens;
