@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC889DCB2296BFBD003EB389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889DCA2296BFBD003EB389 /* AppDelegate.swift */; };
+		FC889DCD2296BFBD003EB389 /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889DCC2296BFBD003EB389 /* DebugViewController.swift */; };
+		FC889DD02296BFBD003EB389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC889DCE2296BFBD003EB389 /* Main.storyboard */; };
+		FC889DD22296BFBF003EB389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC889DD12296BFBF003EB389 /* Assets.xcassets */; };
+		FC889DD52296BFBF003EB389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC889DD32296BFBF003EB389 /* LaunchScreen.storyboard */; };
+		FC889DE02296BFBF003EB389 /* NudgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889DDF2296BFBF003EB389 /* NudgeTests.swift */; };
+		FC889DEB2296C8CB003EB389 /* MessageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889DEA2296C8CB003EB389 /* MessageListViewController.swift */; };
+		FC889DEE2296CE0A003EB389 /* Disk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC889DED2296CE0A003EB389 /* Disk.framework */; };
+		FC889DF02296CE18003EB389 /* Disk.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC889DED2296CE0A003EB389 /* Disk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FC889DF22296D163003EB389 /* MessageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889DF12296D163003EB389 /* MessageStorage.swift */; };
+		FC889DF42296D3CC003EB389 /* MessageListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889DF32296D3CC003EB389 /* MessageListViewModel.swift */; };
+		FC889DF62296D3F6003EB389 /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889DF52296D3F6003EB389 /* UIAlertController+Extensions.swift */; };
+		FC889DF82296D44B003EB389 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889DF72296D44B003EB389 /* Message.swift */; };
+		FC889E002296D55A003EB389 /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889DFF2296D55A003EB389 /* NotificationScheduler.swift */; };
+		FC889E022296D959003EB389 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889E012296D959003EB389 /* Int+Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC889DDC2296BFBF003EB389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC889DBF2296BFBD003EB389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC889DC62296BFBD003EB389;
+			remoteInfo = Nudge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC889DEF2296CE0E003EB389 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FC889DF02296CE18003EB389 /* Disk.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FC889DC72296BFBD003EB389 /* Nudge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nudge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC889DCA2296BFBD003EB389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC889DCC2296BFBD003EB389 /* DebugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
+		FC889DCF2296BFBD003EB389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC889DD12296BFBF003EB389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC889DD42296BFBF003EB389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC889DD62296BFBF003EB389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC889DDB2296BFBF003EB389 /* NudgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NudgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC889DDF2296BFBF003EB389 /* NudgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NudgeTests.swift; sourceTree = "<group>"; };
+		FC889DE12296BFBF003EB389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC889DEA2296C8CB003EB389 /* MessageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewController.swift; sourceTree = "<group>"; };
+		FC889DED2296CE0A003EB389 /* Disk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Disk.framework; path = Carthage/Build/iOS/Disk.framework; sourceTree = "<group>"; };
+		FC889DF12296D163003EB389 /* MessageStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageStorage.swift; sourceTree = "<group>"; };
+		FC889DF32296D3CC003EB389 /* MessageListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListViewModel.swift; sourceTree = "<group>"; };
+		FC889DF52296D3F6003EB389 /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
+		FC889DF72296D44B003EB389 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		FC889DFF2296D55A003EB389 /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
+		FC889E012296D959003EB389 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC889DC42296BFBD003EB389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC889DEE2296CE0A003EB389 /* Disk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC889DD82296BFBF003EB389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC889DBE2296BFBD003EB389 = {
+			isa = PBXGroup;
+			children = (
+				FC889DC92296BFBD003EB389 /* Nudge */,
+				FC889DDE2296BFBF003EB389 /* NudgeTests */,
+				FC889DC82296BFBD003EB389 /* Products */,
+				FC889DEC2296CE0A003EB389 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FC889DC82296BFBD003EB389 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC889DC72296BFBD003EB389 /* Nudge.app */,
+				FC889DDB2296BFBF003EB389 /* NudgeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC889DC92296BFBD003EB389 /* Nudge */ = {
+			isa = PBXGroup;
+			children = (
+				FC889DCA2296BFBD003EB389 /* AppDelegate.swift */,
+				FC889DFE2296D4D6003EB389 /* Model */,
+				FC889DFD2296D4CC003EB389 /* Extensions */,
+				FC889DCE2296BFBD003EB389 /* Main.storyboard */,
+				FC889DD12296BFBF003EB389 /* Assets.xcassets */,
+				FC889DD32296BFBF003EB389 /* LaunchScreen.storyboard */,
+				FC889DD62296BFBF003EB389 /* Info.plist */,
+			);
+			path = Nudge;
+			sourceTree = "<group>";
+		};
+		FC889DDE2296BFBF003EB389 /* NudgeTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC889DDF2296BFBF003EB389 /* NudgeTests.swift */,
+				FC889DE12296BFBF003EB389 /* Info.plist */,
+			);
+			path = NudgeTests;
+			sourceTree = "<group>";
+		};
+		FC889DEC2296CE0A003EB389 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC889DED2296CE0A003EB389 /* Disk.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC889DF92296D466003EB389 /* Message List */ = {
+			isa = PBXGroup;
+			children = (
+				FC889DF32296D3CC003EB389 /* MessageListViewModel.swift */,
+				FC889DEA2296C8CB003EB389 /* MessageListViewController.swift */,
+			);
+			path = "Message List";
+			sourceTree = "<group>";
+		};
+		FC889DFA2296D477003EB389 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				FC889DCC2296BFBD003EB389 /* DebugViewController.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		FC889DFB2296D47E003EB389 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FC889DFA2296D477003EB389 /* Debug */,
+				FC889DF92296D466003EB389 /* Message List */,
+				FC889DFC2296D484003EB389 /* Settings */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FC889DFC2296D484003EB389 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FC889DFD2296D4CC003EB389 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FC889DF52296D3F6003EB389 /* UIAlertController+Extensions.swift */,
+				FC889E012296D959003EB389 /* Int+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FC889DFE2296D4D6003EB389 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC889DF72296D44B003EB389 /* Message.swift */,
+				FC889DF12296D163003EB389 /* MessageStorage.swift */,
+				FC889DFF2296D55A003EB389 /* NotificationScheduler.swift */,
+				FC889DFB2296D47E003EB389 /* Screens */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC889DC62296BFBD003EB389 /* Nudge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC889DE42296BFBF003EB389 /* Build configuration list for PBXNativeTarget "Nudge" */;
+			buildPhases = (
+				FC889DEF2296CE0E003EB389 /* CopyFiles */,
+				FC889DC32296BFBD003EB389 /* Sources */,
+				FC889DC42296BFBD003EB389 /* Frameworks */,
+				FC889DC52296BFBD003EB389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nudge;
+			productName = Nudge;
+			productReference = FC889DC72296BFBD003EB389 /* Nudge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC889DDA2296BFBF003EB389 /* NudgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC889DE72296BFBF003EB389 /* Build configuration list for PBXNativeTarget "NudgeTests" */;
+			buildPhases = (
+				FC889DD72296BFBF003EB389 /* Sources */,
+				FC889DD82296BFBF003EB389 /* Frameworks */,
+				FC889DD92296BFBF003EB389 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC889DDD2296BFBF003EB389 /* PBXTargetDependency */,
+			);
+			name = NudgeTests;
+			productName = NudgeTests;
+			productReference = FC889DDB2296BFBF003EB389 /* NudgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC889DBF2296BFBD003EB389 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Dylan Elliott";
+				TargetAttributes = {
+					FC889DC62296BFBD003EB389 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					FC889DDA2296BFBF003EB389 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = FC889DC62296BFBD003EB389;
+					};
+				};
+			};
+			buildConfigurationList = FC889DC22296BFBD003EB389 /* Build configuration list for PBXProject "Nudge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC889DBE2296BFBD003EB389;
+			productRefGroup = FC889DC82296BFBD003EB389 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC889DC62296BFBD003EB389 /* Nudge */,
+				FC889DDA2296BFBF003EB389 /* NudgeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC889DC52296BFBD003EB389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC889DD52296BFBF003EB389 /* LaunchScreen.storyboard in Resources */,
+				FC889DD22296BFBF003EB389 /* Assets.xcassets in Resources */,
+				FC889DD02296BFBD003EB389 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC889DD92296BFBF003EB389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC889DC32296BFBD003EB389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC889DCD2296BFBD003EB389 /* DebugViewController.swift in Sources */,
+				FC889DF22296D163003EB389 /* MessageStorage.swift in Sources */,
+				FC889DF42296D3CC003EB389 /* MessageListViewModel.swift in Sources */,
+				FC889E022296D959003EB389 /* Int+Extensions.swift in Sources */,
+				FC889DEB2296C8CB003EB389 /* MessageListViewController.swift in Sources */,
+				FC889E002296D55A003EB389 /* NotificationScheduler.swift in Sources */,
+				FC889DF62296D3F6003EB389 /* UIAlertController+Extensions.swift in Sources */,
+				FC889DCB2296BFBD003EB389 /* AppDelegate.swift in Sources */,
+				FC889DF82296D44B003EB389 /* Message.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC889DD72296BFBF003EB389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC889DE02296BFBF003EB389 /* NudgeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC889DDD2296BFBF003EB389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC889DC62296BFBD003EB389 /* Nudge */;
+			targetProxy = FC889DDC2296BFBF003EB389 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC889DCE2296BFBD003EB389 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC889DCF2296BFBD003EB389 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC889DD32296BFBF003EB389 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC889DD42296BFBF003EB389 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC889DE22296BFBF003EB389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC889DE32296BFBF003EB389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC889DE52296BFBF003EB389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6CW3378X23;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Nudge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dylan.Nudge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC889DE62296BFBF003EB389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6CW3378X23;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Nudge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dylan.Nudge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC889DE82296BFBF003EB389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NudgeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dylan.NudgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nudge.app/Nudge";
+			};
+			name = Debug;
+		};
+		FC889DE92296BFBF003EB389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NudgeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dylan.NudgeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nudge.app/Nudge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC889DC22296BFBD003EB389 /* Build configuration list for PBXProject "Nudge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC889DE22296BFBF003EB389 /* Debug */,
+				FC889DE32296BFBF003EB389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC889DE42296BFBF003EB389 /* Build configuration list for PBXNativeTarget "Nudge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC889DE52296BFBF003EB389 /* Debug */,
+				FC889DE62296BFBF003EB389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC889DE72296BFBF003EB389 /* Build configuration list for PBXNativeTarget "NudgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC889DE82296BFBF003EB389 /* Debug */,
+				FC889DE92296BFBF003EB389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC889DBF2296BFBD003EB389 /* Project object */;
+}
