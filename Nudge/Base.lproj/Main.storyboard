@@ -165,6 +165,25 @@
             </objects>
             <point key="canvasLocation" x="1762" y="833"/>
         </scene>
+        <!--Notifications-->
+        <scene sceneID="bWZ-5T-WhH">
+            <objects>
+                <tableViewController id="1LB-Bw-Vg0" customClass="NotificationListViewController" customModule="Nudge" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="YWv-A1-jDb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="1LB-Bw-Vg0" id="6T7-3M-wPT"/>
+                            <outlet property="delegate" destination="1LB-Bw-Vg0" id="NwT-zP-ldU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Notifications" id="OEm-GA-aNV"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PTa-UY-lpa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1761" y="1519"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8Rw-c7-U76">
             <objects>
@@ -176,7 +195,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="5GP-Sv-kp6" kind="relationship" relationship="viewControllers" id="Of3-Wx-oOY"/>
-                        <segue destination="HK9-35-lXp" kind="relationship" relationship="viewControllers" id="l8T-Gg-1yi"/>
+                        <segue destination="Qkt-AR-wnL" kind="relationship" relationship="viewControllers" id="37B-pg-i3R"/>
+                        <segue destination="HK9-35-lXp" kind="relationship" relationship="viewControllers" id="cQc-x6-o7v"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ZY-UB-4Rg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -201,6 +221,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="urm-dz-C19" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="987" y="814"/>
+        </scene>
+        <!--Notifications-->
+        <scene sceneID="RVI-8g-Eiz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qkt-AR-wnL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Notifications" id="4S1-fp-CWR"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="edx-6W-wvn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1LB-Bw-Vg0" kind="relationship" relationship="rootViewController" id="qLV-NK-pqA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o7t-9y-HfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="987" y="1489"/>
         </scene>
     </scenes>
 </document>

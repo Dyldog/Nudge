@@ -22,6 +22,7 @@
 		FC889DF82296D44B003EB389 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889DF72296D44B003EB389 /* Message.swift */; };
 		FC889E002296D55A003EB389 /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889DFF2296D55A003EB389 /* NotificationScheduler.swift */; };
 		FC889E022296D959003EB389 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889E012296D959003EB389 /* Int+Extensions.swift */; };
+		FC889E0522977567003EB389 /* NotificationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889E0422977567003EB389 /* NotificationListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		FC889DF72296D44B003EB389 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		FC889DFF2296D55A003EB389 /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
 		FC889E012296D959003EB389 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		FC889E0422977567003EB389 /* NotificationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		FC889DFB2296D47E003EB389 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FC889E0322977550003EB389 /* Notification List */,
 				FC889DFA2296D477003EB389 /* Debug */,
 				FC889DF92296D466003EB389 /* Message List */,
 				FC889DFC2296D484003EB389 /* Settings */,
@@ -189,6 +192,14 @@
 				FC889DFB2296D47E003EB389 /* Screens */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FC889E0322977550003EB389 /* Notification List */ = {
+			isa = PBXGroup;
+			children = (
+				FC889E0422977567003EB389 /* NotificationListViewController.swift */,
+			);
+			path = "Notification List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +309,7 @@
 				FC889DF42296D3CC003EB389 /* MessageListViewModel.swift in Sources */,
 				FC889E022296D959003EB389 /* Int+Extensions.swift in Sources */,
 				FC889DEB2296C8CB003EB389 /* MessageListViewController.swift in Sources */,
+				FC889E0522977567003EB389 /* NotificationListViewController.swift in Sources */,
 				FC889E002296D55A003EB389 /* NotificationScheduler.swift in Sources */,
 				FC889DF62296D3F6003EB389 /* UIAlertController+Extensions.swift in Sources */,
 				FC889DCB2296BFBD003EB389 /* AppDelegate.swift in Sources */,
