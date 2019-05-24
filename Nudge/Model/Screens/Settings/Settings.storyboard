@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MwN-zO-ujN">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="TgG-Ym-vec">
+            <objects>
+                <navigationController id="MwN-zO-ujN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" id="L6z-aR-37j"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wbr-qG-PJY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="UsU-Cj-aeF" kind="relationship" relationship="rootViewController" id="cGc-EZ-OXp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5wp-ar-FOI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-722" y="124"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="K01-ZP-f3e">
+            <objects>
+                <viewController title="Settings" id="UsU-Cj-aeF" customClass="SettingsViewController" customModule="Nudge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SuY-H1-dPX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="geg-vn-R4l">
+                                <rect key="frame" x="20" y="225" width="374" height="446.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hr-pS-s1S">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="dUE-fk-gJe">
+                                        <rect key="frame" x="0.0" y="59" width="374" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enabled" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sh-bB-TJM">
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jao-n7-hzv">
+                                                <rect key="frame" x="194" y="0.0" width="182" height="31"/>
+                                                <connections>
+                                                    <action selector="switchDidChange" destination="UsU-Cj-aeF" eventType="valueChanged" id="RGy-Nk-wBF"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fkr-ZF-TQt">
+                                        <rect key="frame" x="0.0" y="120" width="374" height="246.5"/>
+                                        <subviews>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="svl-ae-JK6">
+                                                <rect key="frame" x="27" y="30.5" width="320" height="216"/>
+                                                <date key="date" timeIntervalSinceReferenceDate="580357542.86509299">
+                                                    <!--2019-05-24 02:25:42 +0000-->
+                                                </date>
+                                                <connections>
+                                                    <action selector="intervalPickerDidChange" destination="UsU-Cj-aeF" eventType="valueChanged" id="ZAK-Vj-tPg"/>
+                                                </connections>
+                                            </datePicker>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interval" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmc-8e-zYC">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="svl-ae-JK6" firstAttribute="top" secondItem="mmc-8e-zYC" secondAttribute="bottom" constant="10" id="7Hv-35-1wE"/>
+                                            <constraint firstAttribute="trailing" secondItem="mmc-8e-zYC" secondAttribute="trailing" id="HRC-Bj-7ut"/>
+                                            <constraint firstAttribute="bottom" secondItem="svl-ae-JK6" secondAttribute="bottom" id="RKE-Lx-brb"/>
+                                            <constraint firstItem="svl-ae-JK6" firstAttribute="centerX" secondItem="fkr-ZF-TQt" secondAttribute="centerX" id="SVo-bv-C4G"/>
+                                            <constraint firstItem="mmc-8e-zYC" firstAttribute="leading" secondItem="fkr-ZF-TQt" secondAttribute="leading" id="T7H-Ay-6Ee"/>
+                                            <constraint firstItem="mmc-8e-zYC" firstAttribute="top" secondItem="fkr-ZF-TQt" secondAttribute="top" id="WzO-ln-8Sd"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="vQw-R8-GzG">
+                                        <rect key="frame" x="0.0" y="396.5" width="374" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wL4-hA-8Rj">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                <state key="normal" title="Save Interval"/>
+                                                <connections>
+                                                    <action selector="saveButtonTapped" destination="UsU-Cj-aeF" eventType="primaryActionTriggered" id="0nb-lT-Mad"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="wL4-hA-8Rj" firstAttribute="top" secondItem="vQw-R8-GzG" secondAttribute="top" id="Dms-zR-nZg"/>
+                                            <constraint firstAttribute="bottom" secondItem="wL4-hA-8Rj" secondAttribute="bottom" id="Hlo-N3-4hp"/>
+                                            <constraint firstAttribute="trailing" secondItem="wL4-hA-8Rj" secondAttribute="trailing" id="N2w-IY-FUi"/>
+                                            <constraint firstItem="wL4-hA-8Rj" firstAttribute="leading" secondItem="vQw-R8-GzG" secondAttribute="leading" id="Qmw-5w-9q0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="geg-vn-R4l" firstAttribute="centerY" secondItem="SuY-H1-dPX" secondAttribute="centerY" id="Ohv-nO-QvP"/>
+                            <constraint firstItem="geg-vn-R4l" firstAttribute="leading" secondItem="V1U-Sa-5Zz" secondAttribute="leading" constant="20" id="TBE-DQ-4cQ"/>
+                            <constraint firstItem="geg-vn-R4l" firstAttribute="trailing" secondItem="V1U-Sa-5Zz" secondAttribute="trailing" constant="-20" id="Zjp-Hw-3G1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V1U-Sa-5Zz"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="g4s-SZ-kmZ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="notificationIntervalPicker" destination="svl-ae-JK6" id="yve-Zl-kHt"/>
+                        <outlet property="notificationsEnabledSwitch" destination="Jao-n7-hzv" id="IUB-eW-RcE"/>
+                        <outlet property="saveButton" destination="wL4-hA-8Rj" id="BEU-Lp-7i9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12w-tF-5ph" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="361" y="112"/>
+        </scene>
+    </scenes>
+</document>

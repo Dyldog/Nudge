@@ -14,12 +14,17 @@ class NotificationScheduler: NSObject, MessageStorageDelegate, UNUserNotificatio
         self.storage.delegate = self
         self.notificationCenter.delegate = self
         requestNotificationPermission()
+        scheduleNewMessageNotifications()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(scheduleNewMessageNotifications), name: .SettingsDidUpdate, object: Settings.shared)
     }
     
     func requestNotificationPermission() {
         let options: UNAuthorizationOptions = [.alert, .sound, .badge]
         notificationCenter.requestAuthorization(options: options) { (didAllow, error) in
-            if !didAllow {
+            if didAllow {
+                self.scheduleNewMessageNotifications()
+            } else {
                 print("User has declined notifications")
             }
         }
@@ -59,16 +64,18 @@ class NotificationScheduler: NSObject, MessageStorageDelegate, UNUserNotificatio
         )
     }
     
-    func scheduleNewMessageNotifications() {
+    @objc func scheduleNewMessageNotifications() {
         removeNotifications()
         
-        let interval: TimeInterval = 60
-        
-        50.times { (i: Int) in
-            addRandomMessageNotification(
-                minTime: TimeInterval(i) * interval,
-                maxTime: TimeInterval(i + 1) * interval
-            )
+        if Settings.shared.notificationsEnabled {
+            let interval: TimeInterval = Settings.shared.notificationInterval
+            
+            50.times { (i: Int) in
+                addRandomMessageNotification(
+                    minTime: TimeInterval(i) * interval,
+                    maxTime: TimeInterval(i + 1) * interval
+                )
+            }
         }
     }
     

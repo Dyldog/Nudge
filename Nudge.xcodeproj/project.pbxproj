@@ -23,6 +23,8 @@
 		FC889E002296D55A003EB389 /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889DFF2296D55A003EB389 /* NotificationScheduler.swift */; };
 		FC889E022296D959003EB389 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889E012296D959003EB389 /* Int+Extensions.swift */; };
 		FC889E0522977567003EB389 /* NotificationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889E0422977567003EB389 /* NotificationListViewController.swift */; };
+		FC889E0722978CF9003EB389 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889E0622978CF9003EB389 /* SettingsViewController.swift */; };
+		FC889E0922978D30003EB389 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC889E0822978D30003EB389 /* Settings.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		FC889DFF2296D55A003EB389 /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
 		FC889E012296D959003EB389 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
 		FC889E0422977567003EB389 /* NotificationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListViewController.swift; sourceTree = "<group>"; };
+		FC889E0622978CF9003EB389 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FC889E0822978D30003EB389 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 		FC889DFC2296D484003EB389 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				FC889E0622978CF9003EB389 /* SettingsViewController.swift */,
+				FC889E0822978D30003EB389 /* Settings.storyboard */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -287,6 +293,7 @@
 				FC889DD52296BFBF003EB389 /* LaunchScreen.storyboard in Resources */,
 				FC889DD22296BFBF003EB389 /* Assets.xcassets in Resources */,
 				FC889DD02296BFBD003EB389 /* Main.storyboard in Resources */,
+				FC889E0922978D30003EB389 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +313,7 @@
 			files = (
 				FC889DCD2296BFBD003EB389 /* DebugViewController.swift in Sources */,
 				FC889DF22296D163003EB389 /* MessageStorage.swift in Sources */,
+				FC889E0722978CF9003EB389 /* SettingsViewController.swift in Sources */,
 				FC889DF42296D3CC003EB389 /* MessageListViewModel.swift in Sources */,
 				FC889E022296D959003EB389 /* Int+Extensions.swift in Sources */,
 				FC889DEB2296C8CB003EB389 /* MessageListViewController.swift in Sources */,

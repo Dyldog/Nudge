@@ -195,13 +195,24 @@
                     </tabBar>
                     <connections>
                         <segue destination="5GP-Sv-kp6" kind="relationship" relationship="viewControllers" id="Of3-Wx-oOY"/>
-                        <segue destination="Qkt-AR-wnL" kind="relationship" relationship="viewControllers" id="37B-pg-i3R"/>
-                        <segue destination="HK9-35-lXp" kind="relationship" relationship="viewControllers" id="cQc-x6-o7v"/>
+                        <segue destination="Ehf-2I-UeI" kind="relationship" relationship="viewControllers" id="HGO-eU-iPH"/>
+                        <segue destination="Qkt-AR-wnL" kind="relationship" relationship="viewControllers" id="ffd-T9-eB9"/>
+                        <segue destination="HK9-35-lXp" kind="relationship" relationship="viewControllers" id="fpI-yE-etx"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ZY-UB-4Rg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-30" y="430"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="YM7-uD-eVE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="Ehf-2I-UeI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" id="25e-Yn-58h"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qZC-p0-0SW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4" y="904"/>
         </scene>
         <!--Messages-->
         <scene sceneID="n81-d7-dz9">
