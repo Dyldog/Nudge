@@ -4,6 +4,8 @@ extension UIAlertController {
     func addTextField(placeholder: String) {
         addTextField { textField in
             textField.placeholder = placeholder
+            textField.autocapitalizationType = .sentences
+            textField.autocorrectionType = .yes
         }
     }
     
