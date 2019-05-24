@@ -37,7 +37,9 @@ class SettingsFormViewController: FormViewController {
         
         let dateComponents = Calendar.autoupdatingCurrent
             .dateComponents([.hour, .minute], from: datePicker.value!)
-        let interval = dateComponents.hour! * 60 * 60 + dateComponents.minute! * 60
+        let hourSeconds = (dateComponents.hour ?? 0) * 60 * 60
+        let minuteSeconds = (dateComponents.minute ?? 0) * 60
+        let interval = TimeInterval(hourSeconds + minuteSeconds)
         
         Settings.shared.update(
             notificationsEnabled: enabledSwitch.value!,
@@ -56,5 +58,11 @@ extension TimeInterval {
                                         hour: hours,
                                         minute: minutes,
                                         second: seconds)
+    }
+}
+
+extension Date {
+    var countdownComponents: DateComponents {
+        return Calendar.autoupdatingCurrent.dateComponents([.hour], from: self)
     }
 }
