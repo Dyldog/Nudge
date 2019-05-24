@@ -16,12 +16,10 @@ class NotificationListViewController: UITableViewController {
             DispatchQueue.main.async {
                 self.requests = requests.sorted(by: { lhs, rhs in
                     guard let lhsTrigger = lhs.trigger as? UNTimeIntervalNotificationTrigger,
-                          let lhsDate = lhsTrigger.nextTriggerDate(),
-                          let rhsTrigger = rhs.trigger as? UNTimeIntervalNotificationTrigger,
-                          let rhsDate = rhsTrigger.nextTriggerDate()
+                          let rhsTrigger = rhs.trigger as? UNTimeIntervalNotificationTrigger
                     else { return false}
                     
-                    return lhsDate < rhsDate
+                    return lhsTrigger.timeInterval < rhsTrigger.timeInterval
                 })
                 
                 self.tableView.reloadData()
