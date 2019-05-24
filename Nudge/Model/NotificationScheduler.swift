@@ -1,13 +1,18 @@
 import Foundation
 import UserNotifications
-class NotificationScheduler: MessageStorageDelegate {
+class NotificationScheduler: NSObject, MessageStorageDelegate, UNUserNotificationCenterDelegate {
     
     private let storage: MessageStorage
-    private let notificationCenter = UNUserNotificationCenter.current()
+    private let notificationCenter: UNUserNotificationCenter
     
     init(storage: MessageStorage) {
         self.storage = storage
+        self.notificationCenter = UNUserNotificationCenter.current()
+        
+        super.init()
+        
         self.storage.delegate = self
+        self.notificationCenter.delegate = self
         requestNotificationPermission()
     }
     
@@ -75,7 +80,11 @@ class NotificationScheduler: MessageStorageDelegate {
         scheduleNewMessageNotifications()
     }
     
+    // MARK: - UNUserNotificationCenterDelegate
     
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.alert, .badge, .sound])
+    }
 }
 
 extension Date {
