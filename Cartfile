@@ -1,1 +1,3 @@
 github "saoudrizwan/Disk"
+github "xmartlabs/Eureka" ~> 5.0
+

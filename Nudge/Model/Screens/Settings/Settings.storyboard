@@ -13,7 +13,7 @@
         <scene sceneID="TgG-Ym-vec">
             <objects>
                 <navigationController id="MwN-zO-ujN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" id="L6z-aR-37j"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings" id="L6z-aR-37j"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wbr-qG-PJY">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -133,4 +133,7 @@
             <point key="canvasLocation" x="361" y="112"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="settings" width="30" height="30"/>
+    </resources>
 </document>

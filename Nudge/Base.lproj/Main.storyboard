@@ -109,7 +109,7 @@
         <scene sceneID="rcj-Ws-ueM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HK9-35-lXp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Debug" id="i9P-Jz-Af2"/>
+                    <tabBarItem key="tabBarItem" title="Debug" image="debug" id="i9P-Jz-Af2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="daS-Bt-i1S">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -204,10 +204,10 @@
             </objects>
             <point key="canvasLocation" x="-30" y="430"/>
         </scene>
-        <!--Settings-->
+        <!--SettingsForm-->
         <scene sceneID="YM7-uD-eVE">
             <objects>
-                <viewControllerPlaceholder storyboardName="Settings" id="Ehf-2I-UeI" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="SettingsForm" id="Ehf-2I-UeI" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" id="25e-Yn-58h"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qZC-p0-0SW" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -218,7 +218,7 @@
         <scene sceneID="n81-d7-dz9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5GP-Sv-kp6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Messages" id="dKL-41-Uqd"/>
+                    <tabBarItem key="tabBarItem" title="Messages" image="messages" id="dKL-41-Uqd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4Mb-oe-al0">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -237,7 +237,7 @@
         <scene sceneID="RVI-8g-Eiz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qkt-AR-wnL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notifications" id="4S1-fp-CWR"/>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="notifications" id="4S1-fp-CWR"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="edx-6W-wvn">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -253,4 +253,9 @@
             <point key="canvasLocation" x="987" y="1489"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="debug" width="30" height="30"/>
+        <image name="messages" width="30" height="30"/>
+        <image name="notifications" width="30" height="30"/>
+    </resources>
 </document>

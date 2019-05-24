@@ -25,6 +25,11 @@
 		FC889E0522977567003EB389 /* NotificationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889E0422977567003EB389 /* NotificationListViewController.swift */; };
 		FC889E0722978CF9003EB389 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889E0622978CF9003EB389 /* SettingsViewController.swift */; };
 		FC889E0922978D30003EB389 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC889E0822978D30003EB389 /* Settings.storyboard */; };
+		FC889E0B22979E15003EB389 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889E0A22979E15003EB389 /* Settings.swift */; };
+		FC889E0D2297A092003EB389 /* SettingsFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889E0C2297A092003EB389 /* SettingsFormViewController.swift */; };
+		FC889E0F2297A0E1003EB389 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC889E0E2297A0E1003EB389 /* Eureka.framework */; };
+		FC889E102297A0ED003EB389 /* Eureka.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC889E0E2297A0E1003EB389 /* Eureka.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FC889E122297A2F1003EB389 /* SettingsForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC889E112297A2F1003EB389 /* SettingsForm.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				FC889DF02296CE18003EB389 /* Disk.framework in CopyFiles */,
+				FC889E102297A0ED003EB389 /* Eureka.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +78,10 @@
 		FC889E0422977567003EB389 /* NotificationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListViewController.swift; sourceTree = "<group>"; };
 		FC889E0622978CF9003EB389 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FC889E0822978D30003EB389 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		FC889E0A22979E15003EB389 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		FC889E0C2297A092003EB389 /* SettingsFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFormViewController.swift; sourceTree = "<group>"; };
+		FC889E0E2297A0E1003EB389 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
+		FC889E112297A2F1003EB389 /* SettingsForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsForm.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC889DEE2296CE0A003EB389 /* Disk.framework in Frameworks */,
+				FC889E0F2297A0E1003EB389 /* Eureka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +149,7 @@
 		FC889DEC2296CE0A003EB389 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC889E0E2297A0E1003EB389 /* Eureka.framework */,
 				FC889DED2296CE0A003EB389 /* Disk.framework */,
 			);
 			name = Frameworks;
@@ -176,6 +188,8 @@
 			children = (
 				FC889E0622978CF9003EB389 /* SettingsViewController.swift */,
 				FC889E0822978D30003EB389 /* Settings.storyboard */,
+				FC889E0C2297A092003EB389 /* SettingsFormViewController.swift */,
+				FC889E112297A2F1003EB389 /* SettingsForm.storyboard */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -194,6 +208,7 @@
 			children = (
 				FC889DF72296D44B003EB389 /* Message.swift */,
 				FC889DF12296D163003EB389 /* MessageStorage.swift */,
+				FC889E0A22979E15003EB389 /* Settings.swift */,
 				FC889DFF2296D55A003EB389 /* NotificationScheduler.swift */,
 				FC889DFB2296D47E003EB389 /* Screens */,
 			);
@@ -290,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC889E122297A2F1003EB389 /* SettingsForm.storyboard in Resources */,
 				FC889DD52296BFBF003EB389 /* LaunchScreen.storyboard in Resources */,
 				FC889DD22296BFBF003EB389 /* Assets.xcassets in Resources */,
 				FC889DD02296BFBD003EB389 /* Main.storyboard in Resources */,
@@ -312,11 +328,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC889DCD2296BFBD003EB389 /* DebugViewController.swift in Sources */,
+				FC889E0D2297A092003EB389 /* SettingsFormViewController.swift in Sources */,
 				FC889DF22296D163003EB389 /* MessageStorage.swift in Sources */,
 				FC889E0722978CF9003EB389 /* SettingsViewController.swift in Sources */,
 				FC889DF42296D3CC003EB389 /* MessageListViewModel.swift in Sources */,
 				FC889E022296D959003EB389 /* Int+Extensions.swift in Sources */,
 				FC889DEB2296C8CB003EB389 /* MessageListViewController.swift in Sources */,
+				FC889E0B22979E15003EB389 /* Settings.swift in Sources */,
 				FC889E0522977567003EB389 /* NotificationListViewController.swift in Sources */,
 				FC889E002296D55A003EB389 /* NotificationScheduler.swift in Sources */,
 				FC889DF62296D3F6003EB389 /* UIAlertController+Extensions.swift in Sources */,
