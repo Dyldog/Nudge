@@ -3,6 +3,9 @@ import Eureka
 class SettingsFormViewController: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.separatorStyle = .none
+        
         form +++ Section("Notifications")
             <<< SwitchRow("SwitchRow") { row in      // initializer
                 row.title = "Enabled"

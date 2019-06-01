@@ -5,6 +5,8 @@ class DebugFormViewController: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tableView.separatorStyle = .none
+        
         form +++ Section()
             <<< TextRow("TextRow") { row in
                 row.placeholder = "Notification text"
