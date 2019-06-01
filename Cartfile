@@ -1,3 +1,4 @@
 github "saoudrizwan/Disk"
 github "xmartlabs/Eureka" ~> 5.0
+github "ViccAlexander/Chameleon" "wip/swift4"
 

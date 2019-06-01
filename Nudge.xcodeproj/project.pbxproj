@@ -32,6 +32,8 @@
 		FC889E122297A2F1003EB389 /* SettingsForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC889E112297A2F1003EB389 /* SettingsForm.storyboard */; };
 		FC889E142297A7C2003EB389 /* DebugForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC889E132297A7C1003EB389 /* DebugForm.storyboard */; };
 		FC889E162297A7CC003EB389 /* DebugFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC889E152297A7CC003EB389 /* DebugFormViewController.swift */; };
+		FCDA064D22A262E000B4A89C /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCDA064C22A262E000B4A89C /* Chameleon.framework */; };
+		FCDA064E22A262E900B4A89C /* Chameleon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FCDA064C22A262E000B4A89C /* Chameleon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,7 @@
 			files = (
 				FC889DF02296CE18003EB389 /* Disk.framework in CopyFiles */,
 				FC889E102297A0ED003EB389 /* Eureka.framework in CopyFiles */,
+				FCDA064E22A262E900B4A89C /* Chameleon.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +89,7 @@
 		FC889E112297A2F1003EB389 /* SettingsForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsForm.storyboard; sourceTree = "<group>"; };
 		FC889E132297A7C1003EB389 /* DebugForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DebugForm.storyboard; sourceTree = "<group>"; };
 		FC889E152297A7CC003EB389 /* DebugFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugFormViewController.swift; sourceTree = "<group>"; };
+		FCDA064C22A262E000B4A89C /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 			files = (
 				FC889DEE2296CE0A003EB389 /* Disk.framework in Frameworks */,
 				FC889E0F2297A0E1003EB389 /* Eureka.framework in Frameworks */,
+				FCDA064D22A262E000B4A89C /* Chameleon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +158,7 @@
 		FC889DEC2296CE0A003EB389 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FCDA064C22A262E000B4A89C /* Chameleon.framework */,
 				FC889E0E2297A0E1003EB389 /* Eureka.framework */,
 				FC889DED2296CE0A003EB389 /* Disk.framework */,
 			);
@@ -447,6 +453,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -501,6 +508,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -523,7 +531,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dylan.Nudge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -546,7 +553,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dylan.Nudge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -565,7 +571,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dylan.NudgeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nudge.app/Nudge";
 			};
@@ -585,7 +590,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dylan.NudgeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nudge.app/Nudge";
 			};
