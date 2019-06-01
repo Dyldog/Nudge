@@ -66,6 +66,6 @@ extension TimeInterval {
 
 extension Date {
     var countdownComponents: DateComponents {
-        return Calendar.autoupdatingCurrent.dateComponents([.hour], from: self)
+        return Calendar.autoupdatingCurrent.dateComponents([.hour, .minute], from: self)
     }
 }
