@@ -37,11 +37,25 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="RxX-DH-AKK"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Debug" id="aoU-X0-OfF"/>
+                    <navigationItem key="navigationItem" title="Debug" id="aoU-X0-OfF">
+                        <barButtonItem key="rightBarButtonItem" title="Notifications" id="S3D-D8-tjb">
+                            <connections>
+                                <segue destination="6k8-Sw-joR" kind="show" id="Yhu-y0-liu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ls4-cI-zKv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="33" y="-34"/>
+        </scene>
+        <!--NotificationsList-->
+        <scene sceneID="y9R-xj-gWz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NotificationsList" id="6k8-Sw-joR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EGg-am-YXc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064" y="-34"/>
         </scene>
     </scenes>
     <resources>

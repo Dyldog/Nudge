@@ -51,6 +51,33 @@ class SettingsFormViewController: FormViewController {
     }
 }
 
+extension UIViewController {
+    @objc func dismissAnimated() {
+        dismiss(animated: true, completion: nil)
+    }
+}
+
+extension UITabBarController {
+    private func showDebugViewController() {
+        guard
+            let initialViewController = UIStoryboard(name: "DebugForm", bundle: nil).instantiateInitialViewController(),
+            let debugNavController = initialViewController as? UINavigationController else { return }
+        
+        let debugViewController = debugNavController.viewControllers[0]
+        debugViewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Close", style: .plain, target: debugViewController, action: #selector(dismissAnimated))
+        
+        present(debugNavController, animated: true, completion: nil)
+    }
+    
+    override open func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        guard let event = event else { return }
+        
+        if(event.subtype == UIEvent.EventSubtype.motionShake) {
+            showDebugViewController()
+        }
+    }
+}
+
 extension TimeInterval {
     var asDateComponents: DateComponents {
         let seconds: Int = Int(self) % 60
